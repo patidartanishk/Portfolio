@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="careBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="50%" stop-color="#292524"/>
+      <stop offset="100%" stop-color="#0c0a09"/>
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#e11d48"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#44403c"/>
+      <stop offset="100%" stop-color="#292524"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#careBg)"/>
+
+  <!-- Warm ambient circles -->
+  <circle cx="1100" cy="200" r="220" fill="rgba(244, 63, 94, 0.08)"/>
+  <circle cx="200" cy="500" r="160" fill="rgba(251, 146, 60, 0.06)"/>
+
+  <!-- Left Content Info -->
+  <g transform="translate(80, 100)">
+    <rect width="520" height="475" rx="16" fill="rgba(28, 25, 23, 0.9)" stroke="rgba(244, 63, 94, 0.3)" stroke-width="1.5"/>
+
+    <!-- Category Pill -->
+    <rect x="40" y="45" width="190" height="32" rx="16" fill="rgba(244, 63, 94, 0.15)" stroke="#f43f5e" stroke-width="1"/>
+    <text x="56" y="66" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">NON-PROFIT &amp; CARE</text>
+
+    <!-- Title -->
+    <text x="40" y="130" fill="#f8fafc" font-family="system-ui, sans-serif" font-size="38" font-weight="800">Ebenezer Child Care</text>
+    <text x="40" y="170" fill="#fb7185" font-family="system-ui, sans-serif" font-size="28" font-weight="700">Centre Platform</text>
+
+    <!-- Description -->
+    <text x="40" y="215" fill="#d6d3d1" font-family="system-ui, sans-serif" font-size="15" font-weight="400">
+      Responsive child care &amp; community support web platform
+    </text>
+    <text x="40" y="240" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="15" font-weight="400">
+      featuring mission awareness, impact storytelling, and donation UX.
+    </text>
+
+    <!-- Metrics -->
+    <g transform="translate(40, 275)">
+      <rect width="210" height="85" rx="8" fill="url(#cardBg)" stroke="#57534e"/>
+      <text x="20" y="30" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DONATION FLOW</text>
+      <text x="20" y="58" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Seamless Giving</text>
+      <text x="20" y="74" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="11">Secure &amp; Purpose-Driven</text>
+
+      <rect x="230" y="0" width="210" height="85" rx="8" fill="url(#cardBg)" stroke="#57534e"/>
+      <text x="250" y="30" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="700">COMMUNITY</text>
+      <text x="250" y="58" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Impact Stories</text>
+      <text x="250" y="74" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="11">Transparency &amp; Trust</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(40, 395)">
+      <rect x="0" y="0" width="80" height="28" rx="6" fill="#292524"/>
+      <text x="14" y="19" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="600">React.js</text>
+
+      <rect x="90" y="0" width="75" height="28" rx="6" fill="#292524"/>
+      <text x="103" y="19" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Next.js</text>
+
+      <rect x="175" y="0" width="100" height="28" rx="6" fill="#292524"/>
+      <text x="187" y="19" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Tailwind CSS</text>
+
+      <rect x="285" y="0" width="145" height="28" rx="6" fill="#292524"/>
+      <text x="296" y="19" fill="#f43f5e" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Donation UX Flow</text>
+    </g>
+  </g>
+
+  <!-- Right Visual: Portal Screen Mockup -->
+  <g transform="translate(650, 100)">
+    <rect width="470" height="475" rx="16" fill="#1c1917" stroke="#44403c" stroke-width="1.5"/>
+    <rect width="470" height="42" rx="16" fill="#292524"/>
+    <circle cx="25" cy="21" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="21" r="5" fill="#eab308"/>
+    <circle cx="59" cy="21" r="5" fill="#22c55e"/>
+    <text x="235" y="26" text-anchor="middle" fill="#78716c" font-family="system-ui, sans-serif" font-size="12">ebenezerchildcare.org</text>
+
+    <!-- Warm banner in mockup -->
+    <g transform="translate(30, 65)">
+      <rect width="410" height="150" rx="12" fill="url(#cardBg)"/>
+      <!-- Heart icon -->
+      <path d="M70,55 C70,40 85,30 100,45 C115,30 130,40 130,55 C130,75 100,95 100,95 C100,95 70,75 70,55 Z" fill="#f43f5e"/>
+      <text x="155" y="55" fill="#ffffff" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Every Child Deserves</text>
+      <text x="155" y="80" fill="#fb7185" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Hope &amp; A Bright Future</text>
+      <text x="155" y="105" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="12">Providing education, shelter, and compassion.</text>
+    </g>
+
+    <!-- Donation action card -->
+    <g transform="translate(30, 240)">
+      <rect width="410" height="200" rx="12" fill="#292524" stroke="#44403c"/>
+      <text x="25" y="38" fill="#ffffff" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Support Our Mission</text>
+      <text x="25" y="62" fill="#a8a29e" font-family="system-ui, sans-serif" font-size="13">Direct contribution enables nutrition &amp; schooling</text>
+
+      <!-- Tier buttons -->
+      <g transform="translate(25, 80)">
+        <rect width="70" height="36" rx="6" fill="#44403c"/>
+        <text x="35" y="23" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Tier 1</text>
+
+        <rect x="85" y="0" width="70" height="36" rx="6" fill="#f43f5e"/>
+        <text x="120" y="23" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Tier 2</text>
+
+        <rect x="170" y="0" width="70" height="36" rx="6" fill="#44403c"/>
+        <text x="205" y="23" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">Tier 3</text>
+      </g>
+
+      <!-- Donate CTA button -->
+      <rect x="25" y="135" width="360" height="42" rx="8" fill="url(#roseGrad)"/>
+      <text x="205" y="161" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Make A Difference Today</text>
+    </g>
+  </g>
+</svg>

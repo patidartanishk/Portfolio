@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="coachBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141c19"/>
+      <stop offset="50%" stop-color="#1b2823"/>
+      <stop offset="100%" stop-color="#0e1412"/>
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a3b899"/>
+      <stop offset="100%" stop-color="#667b68"/>
+    </linearGradient>
+    <linearGradient id="warmGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ddb892"/>
+      <stop offset="100%" stop-color="#b08968"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#coachBg)"/>
+
+  <!-- Warm ambient organic circles -->
+  <circle cx="1060" cy="190" r="220" fill="rgba(163, 184, 153, 0.08)"/>
+  <circle cx="180" cy="510" r="160" fill="rgba(221, 184, 146, 0.06)"/>
+
+  <!-- Left Information Card -->
+  <g transform="translate(80, 95)">
+    <rect width="520" height="485" rx="16" fill="rgba(20, 28, 25, 0.92)" stroke="rgba(163, 184, 153, 0.3)" stroke-width="1.5"/>
+
+    <!-- Category Pill -->
+    <rect x="40" y="42" width="220" height="32" rx="16" fill="rgba(163, 184, 153, 0.15)" stroke="#a3b899" stroke-width="1"/>
+    <text x="56" y="63" fill="#a3b899" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1">WELLNESS &amp; EDITORIAL WEB</text>
+
+    <!-- Title -->
+    <text x="40" y="125" fill="#f8fafc" font-family="Georgia, serif" font-size="38" font-weight="700">Healing Coach</text>
+    <text x="40" y="165" fill="#ddb892" font-family="system-ui, sans-serif" font-size="26" font-weight="600">Modern Wellness Landing</text>
+
+    <!-- Description -->
+    <text x="40" y="210" fill="#cbd5e1" font-family="system-ui, sans-serif" font-size="14" font-weight="400">
+      A serene, wellness-focused web experience developed as part of
+    </text>
+    <text x="40" y="232" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" font-weight="400">
+      frontend engineering during the AntiLabs internship.
+    </text>
+
+    <!-- Key Contributions -->
+    <g transform="translate(40, 260)">
+      <rect width="210" height="85" rx="8" fill="rgba(30, 42, 37, 0.8)" stroke="#415d43"/>
+      <text x="18" y="28" fill="#a3b899" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONTRIBUTION</text>
+      <text x="18" y="55" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Hero &amp; Navbar</text>
+      <text x="18" y="73" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">First-Screen Experience</text>
+
+      <rect x="230" y="0" width="210" height="85" rx="8" fill="rgba(30, 42, 37, 0.8)" stroke="#415d43"/>
+      <text x="248" y="28" fill="#ddb892" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TYPOGRAPHY</text>
+      <text x="248" y="55" fill="#ffffff" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Editorial Fonts</text>
+      <text x="248" y="73" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="11">Cormorant Garamond &amp; Inter</text>
+    </g>
+
+    <!-- Tech Badges -->
+    <g transform="translate(40, 375)">
+      <rect x="0" y="0" width="85" height="28" rx="6" fill="#1b2823"/>
+      <text x="12" y="19" fill="#a3b899" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Next.js 14</text>
+
+      <rect x="95" y="0" width="105" height="28" rx="6" fill="#1b2823"/>
+      <text x="107" y="19" fill="#a3b899" font-family="system-ui, sans-serif" font-size="12" font-weight="600">App Router</text>
+
+      <rect x="210" y="0" width="95" height="28" rx="6" fill="#1b2823"/>
+      <text x="222" y="19" fill="#a3b899" font-family="system-ui, sans-serif" font-size="12" font-weight="600">TypeScript</text>
+
+      <rect x="315" y="0" width="105" height="28" rx="6" fill="#1b2823"/>
+      <text x="327" y="19" fill="#a3b899" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Tailwind CSS</text>
+    </g>
+
+    <text x="40" y="445" fill="#ddb892" font-family="system-ui, sans-serif" font-size="13" font-weight="600">
+      Internship Project @ AntiLabs
+    </text>
+  </g>
+
+  <!-- Right Visual: Wellness Landing Page Screen Mockup -->
+  <g transform="translate(640, 95)">
+    <rect width="480" height="485" rx="16" fill="#141c19" stroke="#344e41" stroke-width="1.5"/>
+    <!-- Mockup Header / Nav -->
+    <rect width="480" height="46" rx="16" fill="#1b2823"/>
+    <circle cx="25" cy="23" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="23" r="5" fill="#eab308"/>
+    <circle cx="59" cy="23" r="5" fill="#22c55e"/>
+    <text x="110" y="28" fill="#a3b899" font-family="Georgia, serif" font-size="13" font-weight="700">HEALING COACH</text>
+    <text x="290" y="27" fill="#6b7280" font-family="system-ui, sans-serif" font-size="11">About • Pillars • Sessions</text>
+    <rect x="400" y="13" width="65" height="22" rx="11" fill="url(#sageGrad)"/>
+    <text x="432" y="27" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Book</text>
+
+    <!-- Hero Card Mockup -->
+    <g transform="translate(30, 68)">
+      <rect width="420" height="210" rx="12" fill="#1b2823" stroke="#2d4036"/>
+      <!-- Decorative Botanical Leaf Shape -->
+      <path d="M70,50 Q110,30 110,80 Q110,130 70,110 Q30,130 30,80 Q30,30 70,50 Z" fill="rgba(163, 184, 153, 0.2)"/>
+      <path d="M70,50 L70,110" stroke="#a3b899" stroke-width="2"/>
+
+      <text x="140" y="65" fill="#a3b899" font-family="system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="1">MINDFUL WELLNESS</text>
+      <text x="140" y="98" fill="#ffffff" font-family="Georgia, serif" font-size="24" font-weight="700">Restore Balance</text>
+      <text x="140" y="125" fill="#ddb892" font-family="Georgia, serif" font-size="22" font-style="italic">Within Your Life</text>
+      <text x="140" y="155" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">Holistic breathwork, nervous system resets,</text>
+      <text x="140" y="172" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="11">and guided mental clarity sessions.</text>
+    </g>
+
+    <!-- Bottom Feature Pillars -->
+    <g transform="translate(30, 300)">
+      <rect width="130" height="150" rx="10" fill="#1b2823" stroke="#2d4036"/>
+      <circle cx="65" cy="40" r="16" fill="rgba(221, 184, 146, 0.2)"/>
+      <text x="65" y="45" text-anchor="middle" fill="#ddb892" font-size="16">✦</text>
+      <text x="65" y="85" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Grounding</text>
+      <text x="65" y="105" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">Somatic</text>
+      <text x="65" y="120" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">Resilience</text>
+
+      <rect x="145" y="0" width="130" height="150" rx="10" fill="#1b2823" stroke="#2d4036"/>
+      <circle cx="210" cy="40" r="16" fill="rgba(163, 184, 153, 0.2)"/>
+      <text x="210" y="45" text-anchor="middle" fill="#a3b899" font-size="16">🌿</text>
+      <text x="210" y="85" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Mindfulness</text>
+      <text x="210" y="105" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">Daily Breath</text>
+      <text x="210" y="120" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">&amp; Stillness</text>
+
+      <rect x="290" y="0" width="130" height="150" rx="10" fill="#1b2823" stroke="#2d4036"/>
+      <circle cx="355" cy="40" r="16" fill="rgba(221, 184, 146, 0.2)"/>
+      <text x="355" y="45" text-anchor="middle" fill="#ddb892" font-size="16">☼</text>
+      <text x="355" y="85" text-anchor="middle" fill="#ffffff" font-family="system-ui, sans-serif" font-size="12" font-weight="700">Alignment</text>
+      <text x="355" y="105" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">Personalized</text>
+      <text x="355" y="120" text-anchor="middle" fill="#9ca3af" font-family="system-ui, sans-serif" font-size="10">Routines</text>
+    </g>
+  </g>
+</svg>
