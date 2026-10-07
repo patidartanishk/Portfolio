@@ -24,17 +24,1961 @@
   }
 }
 
-/* Custom scrollbar */
+/* =========================================================
+   CUSTOM SCROLLBAR
+   ========================================================= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 4px;
 }
+
 .dark ::-webkit-scrollbar-thumb {
   background: #334155;
+}
+
+
+/* =========================================================
+   RESPONSIVE FOUNDATION
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+
+/* =========================================================
+   TABLET
+   769px - 1024px
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* -------------------------------------------------------
+     GLOBAL LAYOUT
+     ------------------------------------------------------- */
+
+  main,
+  section,
+  header,
+  footer {
+    max-width: 100%;
+  }
+
+
+  /* -------------------------------------------------------
+     NAVBAR
+     ------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  #home {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #home > div {
+    width: 100%;
+  }
+
+  #home > div > div {
+    width: 100%;
+  }
+
+  #home > div > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #home > div > div:last-child {
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home > div > div:first-child .group {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  #home > div > div:first-child img {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home h1 {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home > div > div:last-child > p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home > div > div:last-child > div:last-child {
+    justify-content: center;
+  }
+
+
+  /* -------------------------------------------------------
+     ABOUT
+     ------------------------------------------------------- */
+
+  #about {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #about .grid {
+    width: 100%;
+  }
+
+  #about .grid > div {
+    min-width: 0;
+  }
+
+  #about .grid p {
+    overflow-wrap: anywhere;
+  }
+
+
+  /* -------------------------------------------------------
+     SKILLS
+     ------------------------------------------------------- */
+
+  #skills {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #skills > div {
+    max-width: 100%;
+  }
+
+  /* Make radar slightly smaller on tablet */
+  #skills > div:nth-child(2) {
+    min-height: 500px;
+  }
+
+
+  /* -------------------------------------------------------
+     EXPERIENCE / EDUCATION TIMELINES
+     ------------------------------------------------------- */
+
+  #experience,
+  #education {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #experience > div:last-child,
+  #education > div:last-child {
+    width: 90%;
+    max-width: 900px;
+  }
+
+  #experience li,
+  #education li {
+    width: 75%;
+  }
+
+
+  /* -------------------------------------------------------
+     PROJECTS
+     ------------------------------------------------------- */
+
+  #projects {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #projects article {
+    min-width: 0;
+  }
+
+
+  /* -------------------------------------------------------
+     ACHIEVEMENTS
+     ------------------------------------------------------- */
+
+  #achievements {
+    width: 100%;
+    overflow: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTACT
+     ------------------------------------------------------- */
+
+  #contact {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+
+/* =========================================================
+   SMALL TABLET / LARGE MOBILE
+   481px - 768px
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* -------------------------------------------------------
+     GLOBAL
+     ------------------------------------------------------- */
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     NAVBAR
+     ------------------------------------------------------- */
+
+  header {
+    width: 100%;
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
+  header > div:first-of-type a {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+
+  header > div:last-of-type {
+    gap: 0.65rem;
+  }
+
+
+  /* Mobile drawer */
+  header > div[class*="fixed"] {
+    max-width: calc(100vw - 2rem);
+    min-width: 0;
+    max-height: calc(100vh - 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     SHARED SECTION HEADINGS
+     ------------------------------------------------------- */
+
+  #about .text-center,
+  #skills .text-center,
+  #experience .text-center,
+  #projects .text-center,
+  #achievements .text-center,
+  #education .text-center,
+  #contact .text-center {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  #about .text-center h2,
+  #skills .text-center h2,
+  #experience .text-center h2,
+  #projects .text-center h2,
+  #achievements .text-center h2,
+  #education .text-center h2,
+  #contact .text-center h2 {
+    font-size: 2.5rem !important;
+    line-height: 1.15;
+  }
+
+  #about .text-center p,
+  #skills .text-center p,
+  #experience .text-center p,
+  #projects .text-center p,
+  #achievements .text-center p,
+  #education .text-center p,
+  #contact .text-center p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  #home > div {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  #home > div > div {
+    gap: 2rem;
+  }
+
+  #home > div > div:first-child .group {
+    max-width: 320px;
+  }
+
+  #home > div > div:first-child img {
+    max-width: 320px;
+  }
+
+  #home > div > div:last-child > div:first-child {
+    font-size: 0.7rem;
+    line-height: 1.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #home h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.15;
+  }
+
+  #home > div > div:last-child > p {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    max-width: 650px;
+  }
+
+  #home > div > div:last-child > div:last-child {
+    gap: 0.75rem;
+    justify-content: center;
+  }
+
+
+  /* -------------------------------------------------------
+     ABOUT
+     ------------------------------------------------------- */
+
+  #about > div {
+    padding-top: 4rem !important;
+  }
+
+  #about .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+
+  #about .grid > div {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #about .grid > div:first-child {
+    order: 2;
+  }
+
+  #about .grid > div:nth-child(2) {
+    order: 1;
+  }
+
+  #about .grid > div:first-child h3 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  #about .grid > div:first-child p {
+    font-size: 0.8rem;
+    line-height: 1.7;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child {
+    padding: 1.5rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child > div {
+    min-width: 0;
+    padding: 0.75rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child span {
+    font-size: 1.5rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child h5 {
+    font-size: 0.6rem;
+  }
+
+
+  /* -------------------------------------------------------
+     SKILLS
+     ------------------------------------------------------- */
+
+  /*
+     The desktop circular radar uses viewport-based
+     absolute positions. Instead of allowing those labels
+     to escape the phone viewport, the radar is hidden
+     on mobile/tablet and the categorized skill cards
+     become the mobile skill presentation.
+  */
+
+  #skills > div:nth-child(2) {
+    display: none;
+  }
+
+  #skills > div:nth-child(3) {
+    padding-top: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  #skills > div:nth-child(3) > div {
+    min-width: 0;
+    padding: 1.25rem;
+  }
+
+  #skills > div:nth-child(3) h3 {
+    font-size: 1rem;
+  }
+
+  #skills > div:nth-child(3) span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+
+  /* -------------------------------------------------------
+     EXPERIENCE
+     ------------------------------------------------------- */
+
+  #experience > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #experience > div:last-child > ul {
+    margin-left: 0;
+    padding-left: 3.5rem;
+  }
+
+  #experience > div:last-child > div {
+    left: 1.5rem;
+  }
+
+  #experience li {
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #experience li > div > div.absolute {
+    left: -3.25rem;
+  }
+
+  #experience li h3 {
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+
+  #experience li > div > span {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  #experience li ul {
+    font-size: 0.75rem;
+  }
+
+  #experience li > div > div:not(.absolute) {
+    min-width: 0;
+  }
+
+  #experience li > div > div[class*="p-4"] {
+    padding: 0.85rem;
+  }
+
+
+  /* -------------------------------------------------------
+     PROJECTS
+     ------------------------------------------------------- */
+
+  #projects {
+    width: 100%;
+  }
+
+  #projects > div:first-child {
+    margin-bottom: 2.5rem;
+  }
+
+  #projects article {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #projects article > div {
+    min-width: 0;
+  }
+
+  #projects article img {
+    max-width: 100%;
+  }
+
+  #projects article p {
+    overflow-wrap: anywhere;
+  }
+
+  #projects article .flex-wrap {
+    max-width: 100%;
+  }
+
+  #projects > div.space-y-16 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #projects > div.space-y-16 article {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #projects > div.mt-20 {
+    margin-top: 3.5rem;
+  }
+
+  #projects > div.mt-20 > div.grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  #projects > div.mt-20 article {
+    padding: 1.25rem;
+  }
+
+  #projects > div.mt-20 article h3 {
+    font-size: 1.15rem;
+  }
+
+
+  /* -------------------------------------------------------
+     ACHIEVEMENTS
+     ------------------------------------------------------- */
+
+  #achievements > div.grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  #achievements > div.grid > div {
+    min-width: 0;
+    padding: 1.25rem;
+  }
+
+  #achievements > div.grid > div p,
+  #achievements > div.grid > div span {
+    overflow-wrap: anywhere;
+  }
+
+  #achievements > div.max-w-4xl {
+    width: 100%;
+  }
+
+  #achievements > div.max-w-4xl > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+
+  /* -------------------------------------------------------
+     EDUCATION
+     ------------------------------------------------------- */
+
+  #education > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #education > div:last-child > ul {
+    margin-left: 0;
+    padding-left: 3.5rem;
+  }
+
+  #education > div:last-child > div {
+    left: 1.5rem;
+  }
+
+  #education li {
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #education li > div > div.absolute {
+    left: -3.25rem;
+  }
+
+  #education li h3 {
+    font-size: 1.2rem;
+  }
+
+  #education li > div > span {
+    font-size: 0.8rem;
+    overflow-wrap: anywhere;
+  }
+
+  #education li p {
+    font-size: 0.75rem;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTACT
+     ------------------------------------------------------- */
+
+  #contact > div.max-w-4xl {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #contact > div.max-w-4xl > div {
+    padding: 2rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl {
+    margin-bottom: 2rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl h3 {
+    font-size: 1.5rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid {
+    gap: 1rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid > a {
+    min-width: 0;
+    padding: 1.25rem;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   481px AND BELOW
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* =======================================================
+     NAVBAR
+     ======================================================= */
+
+  header {
+    width: 100%;
+    padding: 1rem !important;
+    gap: 0.5rem;
+  }
+
+  header > button {
+    flex-shrink: 0;
+  }
+
+  header > div:first-of-type {
+    flex-shrink: 0;
+  }
+
+  header > div:first-of-type a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  header > div:last-of-type {
+    flex-shrink: 0;
+    gap: 0.4rem;
+  }
+
+  header > div:last-of-type a {
+    width: 1.3rem;
+  }
+
+  header > div:last-of-type button {
+    margin-left: 0 !important;
+    padding: 0.35rem;
+  }
+
+  header > div:last-of-type button svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+
+  /* Mobile drawer */
+  header > div[class*="fixed"] {
+    width: calc(100vw - 2rem);
+    min-width: 0 !important;
+    max-width: calc(100vw - 2rem);
+    max-height: calc(100vh - 2rem);
+    padding: 1.75rem 1rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  header > div[class*="fixed"] nav {
+    width: 100%;
+  }
+
+  header > div[class*="fixed"] nav button {
+    font-size: 1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+
+  /* =======================================================
+     SHARED SECTION HEADINGS
+     ======================================================= */
+
+  #about .text-center,
+  #skills .text-center,
+  #experience .text-center,
+  #projects .text-center,
+  #achievements .text-center,
+  #education .text-center,
+  #contact .text-center {
+    margin-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #about .text-center h2,
+  #skills .text-center h2,
+  #experience .text-center h2,
+  #projects .text-center h2,
+  #achievements .text-center h2,
+  #education .text-center h2,
+  #contact .text-center h2 {
+    font-size: 2rem !important;
+    line-height: 1.15;
+  }
+
+  #about .text-center p,
+  #skills .text-center p,
+  #experience .text-center p,
+  #projects .text-center p,
+  #achievements .text-center p,
+  #education .text-center p,
+  #contact .text-center p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+  }
+
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  #home {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #home > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1.25rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+
+  #home > div > div {
+    gap: 1.5rem;
+  }
+
+  #home > div > div:first-child {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #home > div > div:first-child .group {
+    width: min(82vw, 300px);
+    max-width: 300px;
+  }
+
+  #home > div > div:first-child img {
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #home > div > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #home > div > div:last-child > div:first-child {
+    max-width: 100%;
+    font-size: 0.65rem;
+    line-height: 1.15rem;
+    padding: 0.4rem 0.7rem;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+  }
+
+  #home h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 2rem !important;
+    line-height: 1.15;
+    text-align: center !important;
+    overflow-wrap: anywhere;
+  }
+
+  #home h1 span {
+    margin-right: 0.15rem;
+  }
+
+  #home > div > div:last-child > p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.65;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  #home > div > div:last-child > div:last-child {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.25rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:first-child {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.78rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:nth-child(2) {
+    font-size: 0.78rem;
+  }
+
+  #home > div > div:last-child > div:last-child > div {
+    margin-left: 0 !important;
+    gap: 0.35rem;
+  }
+
+  #home > div > div:last-child > div:last-child > div a {
+    padding: 0.35rem;
+  }
+
+  #home > div > div:last-child > div:last-child > div svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #home > div.absolute {
+    display: none;
+  }
+
+
+  /* =======================================================
+     ABOUT
+     ======================================================= */
+
+  #about {
+    overflow: hidden;
+  }
+
+  #about > div {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 3rem !important;
+  }
+
+  #about .grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+
+  #about .grid > div {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  #about .grid > div:first-child {
+    order: 2;
+  }
+
+  #about .grid > div:nth-child(2) {
+    order: 1;
+  }
+
+  #about .grid > div:first-child h3 {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+
+  #about .grid > div:first-child p {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    overflow-wrap: anywhere;
+  }
+
+  /* Academic card */
+  #about .grid > div:nth-child(2) > div:first-child {
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child > div.absolute {
+    right: -0.25rem;
+    width: 100%;
+    height: 100%;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child h4 {
+    font-size: 0.95rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child span {
+    font-size: 0.65rem;
+    padding: 0.3rem 0.55rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child p {
+    overflow-wrap: anywhere;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child p:first-of-type {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child p:nth-of-type(2) {
+    font-size: 0.68rem;
+    line-height: 1.5;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child p:nth-of-type(3) {
+    font-size: 0.7rem;
+    line-height: 1.6;
+  }
+
+  /* Stats */
+  #about .grid > div:nth-child(2) > div:last-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child > div {
+    width: 100%;
+    min-width: 0;
+    padding: 0.65rem 0.3rem;
+    border-radius: 0.9rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child span {
+    font-size: 1.2rem;
+    line-height: 1.15;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child h5 {
+    font-size: 0.5rem;
+    line-height: 1.25;
+    margin-top: 0.2rem;
+  }
+
+
+  /* =======================================================
+     SKILLS
+     ======================================================= */
+
+  #skills {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  /* Hide viewport-positioned radar on phones */
+  #skills > div:nth-child(2) {
+    display: none;
+  }
+
+  /* Skill cards */
+  #skills > div:nth-child(3) {
+    width: 100%;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  #skills > div:nth-child(3) > div {
+    width: 100%;
+    min-width: 0;
+    padding: 1.1rem;
+  }
+
+  #skills > div:nth-child(3) h3 {
+    font-size: 1rem;
+  }
+
+  #skills > div:nth-child(3) span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  #skills > div:nth-child(3) > div > div.flex-wrap {
+    width: 100%;
+  }
+
+
+  /* =======================================================
+     EXPERIENCE
+     ======================================================= */
+
+  #experience {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #experience > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #experience > div:last-child > ul {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 3rem;
+  }
+
+  #experience > div:last-child > div {
+    left: 1.25rem;
+    width: 3px;
+  }
+
+  #experience li {
+    width: 100%;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+
+  #experience li > div > div.absolute {
+    left: -2.75rem;
+  }
+
+  #experience li > div > div.absolute > div {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #experience li > div > div.absolute > div > div {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  #experience li h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  #experience li > div > span {
+    font-size: 0.7rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  #experience li ul {
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+  #experience li > div > div[class*="p-4"] {
+    padding: 0.8rem;
+  }
+
+  #experience li > div > div[class*="p-4"] h4 {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+
+  #experience li > div > div[class*="p-4"] span {
+    overflow-wrap: anywhere;
+  }
+
+  #experience li > div > div[class*="border-t"] {
+    gap: 0.35rem;
+  }
+
+
+  /* =======================================================
+     PROJECTS
+     ======================================================= */
+
+  #projects {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #projects > div:first-child {
+    margin-bottom: 2rem;
+  }
+
+  #projects > div.space-y-16 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #projects > div.space-y-16 article {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  #projects > div.space-y-16 article > div:first-child {
+    width: 100%;
+  }
+
+  #projects > div.space-y-16 article > div:first-child img {
+    width: 100%;
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+  }
+
+  #projects > div.space-y-16 article > div:nth-child(3) {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 1rem;
+  }
+
+  #projects article h3 {
+    overflow-wrap: anywhere;
+  }
+
+  #projects article p {
+    overflow-wrap: anywhere;
+  }
+
+  #projects article .flex-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #projects article .flex-wrap span {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  /* Featured project action area */
+  #projects > div.space-y-16 article > div:last-child {
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  /* Client projects */
+  #projects > div.mt-20 {
+    margin-top: 3rem;
+  }
+
+  #projects > div.mt-20 > h3 {
+    font-size: 1.35rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #projects > div.mt-20 > div.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  #projects > div.mt-20 article {
+    width: 100%;
+    padding: 1.1rem;
+    min-width: 0;
+  }
+
+  #projects > div.mt-20 article h3 {
+    font-size: 1.1rem;
+  }
+
+  #projects > div.mt-20 article p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+  /* Secondary projects */
+  #projects > div.pt-10 > div.grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+
+  /* =======================================================
+     ACHIEVEMENTS
+     ======================================================= */
+
+  #achievements {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #achievements > div.grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  #achievements > div.grid > div {
+    width: 100%;
+    min-width: 0;
+    padding: 1.1rem;
+  }
+
+  #achievements > div.grid > div p,
+  #achievements > div.grid > div span {
+    overflow-wrap: anywhere;
+  }
+
+  #achievements > div.grid > div h3 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+  }
+
+  #achievements > div.max-w-4xl {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #achievements > div.max-w-4xl > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.8rem;
+  }
+
+  #achievements > div.max-w-4xl > div > div {
+    min-width: 0;
+    padding: 1rem;
+  }
+
+
+  /* =======================================================
+     EDUCATION
+     ======================================================= */
+
+  #education {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #education > div:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #education > div:last-child > ul {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 3rem;
+  }
+
+  #education > div:last-child > div {
+    left: 1.25rem;
+    width: 3px;
+  }
+
+  #education li {
+    width: 100%;
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
+
+  #education li > div > div.absolute {
+    left: -2.75rem;
+  }
+
+  #education li > div > div.absolute > div {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  #education li > div > div.absolute > div > div {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+
+  #education li h3 {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  #education li > div > span {
+    font-size: 0.72rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  #education li > div > div:not(.absolute) {
+    overflow-wrap: anywhere;
+  }
+
+  #education li p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+
+  /* =======================================================
+     CONTACT
+     ======================================================= */
+
+  #contact {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #contact > div.max-w-4xl {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #contact > div.max-w-4xl > div {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.absolute {
+    width: 100%;
+    right: -0.35rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl > div {
+    max-width: 100%;
+    font-size: 0.65rem;
+    line-height: 1.35;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl h3 {
+    font-size: 1.35rem;
+    line-height: 1.3;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl p {
+    font-size: 0.72rem;
+    line-height: 1.65;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid > a {
+    width: 100%;
+    min-width: 0;
+    padding: 1.25rem 0.9rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid > a h4 {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid > a p {
+    font-size: 0.65rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  #contact > div.max-w-4xl > div > div.grid > a span {
+    font-size: 0.65rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.pt-6 {
+    width: 100%;
+  }
+
+  #contact > div.max-w-4xl > div > div.pt-6 p {
+    overflow-wrap: anywhere;
+    font-size: 0.65rem;
+    line-height: 1.5;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   376px AND BELOW
+   ========================================================= */
+
+@media (max-width: 375px) {
+
+  /* -------------------------------------------------------
+     NAVBAR
+     ------------------------------------------------------- */
+
+  header {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  header > div:first-of-type a {
+    width: 2.35rem;
+    height: 2.35rem;
+    font-size: 0.85rem;
+  }
+
+  header > div:last-of-type {
+    gap: 0.3rem;
+  }
+
+  header > div:last-of-type a {
+    width: 1.15rem;
+  }
+
+  header > div:last-of-type button {
+    padding: 0.25rem;
+  }
+
+  header > div:last-of-type button svg {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  header > div[class*="fixed"] {
+    width: calc(100vw - 1.5rem);
+    max-width: calc(100vw - 1.5rem);
+    padding: 1.5rem 0.9rem;
+  }
+
+
+  /* -------------------------------------------------------
+     SECTION HEADINGS
+     ------------------------------------------------------- */
+
+  #about .text-center h2,
+  #skills .text-center h2,
+  #experience .text-center h2,
+  #projects .text-center h2,
+  #achievements .text-center h2,
+  #education .text-center h2,
+  #contact .text-center h2 {
+    font-size: 1.8rem !important;
+  }
+
+  #about .text-center p,
+  #skills .text-center p,
+  #experience .text-center p,
+  #projects .text-center p,
+  #achievements .text-center p,
+  #education .text-center p,
+  #contact .text-center p {
+    font-size: 0.68rem;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  #home > div {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  #home > div > div {
+    gap: 1.25rem;
+  }
+
+  #home > div > div:first-child .group {
+    width: min(78vw, 270px);
+    max-width: 270px;
+  }
+
+  #home > div > div:first-child img {
+    max-width: 250px;
+  }
+
+  #home > div > div:last-child > div:first-child {
+    font-size: 0.58rem;
+    line-height: 1rem;
+    padding: 0.35rem 0.55rem;
+  }
+
+  #home h1 {
+    font-size: 1.75rem !important;
+  }
+
+  #home > div > div:last-child > p {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  #home > div > div:last-child > div:last-child {
+    gap: 0.5rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:first-child {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.72rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:nth-child(2) {
+    font-size: 0.72rem;
+  }
+
+
+  /* -------------------------------------------------------
+     ABOUT
+     ------------------------------------------------------- */
+
+  #about > div {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+
+  #about .grid {
+    gap: 1.5rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child {
+    padding: 1rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child {
+    gap: 0.3rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child > div {
+    padding: 0.55rem 0.2rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child span {
+    font-size: 1.05rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child h5 {
+    font-size: 0.46rem;
+  }
+
+  #about .grid > div:first-child p {
+    font-size: 0.7rem;
+  }
+
+
+  /* -------------------------------------------------------
+     SKILLS
+     ------------------------------------------------------- */
+
+  #skills > div:nth-child(3) > div {
+    padding: 0.95rem;
+  }
+
+  #skills > div:nth-child(3) h3 {
+    font-size: 0.9rem;
+  }
+
+
+  /* -------------------------------------------------------
+     EXPERIENCE / EDUCATION
+     ------------------------------------------------------- */
+
+  #experience > div:last-child > ul,
+  #education > div:last-child > ul {
+    padding-left: 2.7rem;
+  }
+
+  #experience > div:last-child > div,
+  #education > div:last-child > div {
+    left: 1.1rem;
+  }
+
+  #experience li > div > div.absolute,
+  #education li > div > div.absolute {
+    left: -2.45rem;
+  }
+
+  #experience li h3,
+  #education li h3 {
+    font-size: 1rem;
+  }
+
+  #experience li ul,
+  #education li p {
+    font-size: 0.68rem;
+  }
+
+
+  /* -------------------------------------------------------
+     PROJECTS
+     ------------------------------------------------------- */
+
+  #projects > div.space-y-16 article {
+    padding: 0.85rem;
+  }
+
+  #projects > div.mt-20 > h3 {
+    font-size: 1.2rem;
+  }
+
+  #projects > div.mt-20 article {
+    padding: 0.9rem;
+  }
+
+
+  /* -------------------------------------------------------
+     ACHIEVEMENTS
+     ------------------------------------------------------- */
+
+  #achievements > div.grid > div {
+    padding: 0.9rem;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTACT
+     ------------------------------------------------------- */
+
+  #contact > div.max-w-4xl {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  #contact > div.max-w-4xl > div {
+    padding: 1.1rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl h3 {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* =========================================================
+   320PX AND BELOW
+   ========================================================= */
+
+@media (max-width: 320px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+
+  /* -------------------------------------------------------
+     NAVBAR
+     ------------------------------------------------------- */
+
+  header {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+  }
+
+  header > div:first-of-type a {
+    width: 2.15rem;
+    height: 2.15rem;
+    font-size: 0.8rem;
+  }
+
+  header > div:last-of-type {
+    gap: 0.2rem;
+  }
+
+  header > div:last-of-type a {
+    width: 1rem;
+  }
+
+  header > div:last-of-type button {
+    padding: 0.2rem;
+  }
+
+
+  /* -------------------------------------------------------
+     HERO
+     ------------------------------------------------------- */
+
+  #home > div {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+  }
+
+  #home > div > div:first-child .group {
+    width: 235px;
+    max-width: 235px;
+  }
+
+  #home > div > div:first-child img {
+    max-width: 215px;
+  }
+
+  #home > div > div:last-child > div:first-child {
+    font-size: 0.54rem;
+    padding-left: 0.45rem;
+    padding-right: 0.45rem;
+  }
+
+  #home h1 {
+    font-size: 1.55rem !important;
+  }
+
+  #home > div > div:last-child > p {
+    font-size: 0.7rem;
+    line-height: 1.55;
+  }
+
+  #home > div > div:last-child > div:last-child {
+    gap: 0.35rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:first-child {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.67rem;
+  }
+
+  #home > div > div:last-child > div:last-child > a:nth-child(2) {
+    font-size: 0.67rem;
+  }
+
+
+  /* -------------------------------------------------------
+     SECTION HEADINGS
+     ------------------------------------------------------- */
+
+  #about .text-center h2,
+  #skills .text-center h2,
+  #experience .text-center h2,
+  #projects .text-center h2,
+  #achievements .text-center h2,
+  #education .text-center h2,
+  #contact .text-center h2 {
+    font-size: 1.6rem !important;
+  }
+
+
+  /* -------------------------------------------------------
+     ABOUT
+     ------------------------------------------------------- */
+
+  #about > div {
+    padding-left: 0.6rem !important;
+    padding-right: 0.6rem !important;
+  }
+
+  #about .grid > div:nth-child(2) > div:first-child {
+    padding: 0.85rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child {
+    gap: 0.22rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child > div {
+    padding: 0.45rem 0.15rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child span {
+    font-size: 0.95rem;
+  }
+
+  #about .grid > div:nth-child(2) > div:last-child h5 {
+    font-size: 0.4rem;
+  }
+
+  #about .grid > div:first-child p {
+    font-size: 0.66rem;
+  }
+
+
+  /* -------------------------------------------------------
+     SKILLS
+     ------------------------------------------------------- */
+
+  #skills > div:nth-child(3) > div {
+    padding: 0.8rem;
+  }
+
+  #skills > div:nth-child(3) h3 {
+    font-size: 0.85rem;
+  }
+
+  #skills > div:nth-child(3) span {
+    font-size: 0.65rem;
+  }
+
+
+  /* -------------------------------------------------------
+     EXPERIENCE / EDUCATION
+     ------------------------------------------------------- */
+
+  #experience > div:last-child > ul,
+  #education > div:last-child > ul {
+    padding-left: 2.4rem;
+  }
+
+  #experience > div:last-child > div,
+  #education > div:last-child > div {
+    left: 0.95rem;
+  }
+
+  #experience li > div > div.absolute,
+  #education li > div > div.absolute {
+    left: -2.15rem;
+  }
+
+  #experience li h3,
+  #education li h3 {
+    font-size: 0.92rem;
+  }
+
+  #experience li > div > span,
+  #education li > div > span {
+    font-size: 0.63rem;
+  }
+
+  #experience li ul,
+  #education li p {
+    font-size: 0.64rem;
+  }
+
+
+  /* -------------------------------------------------------
+     PROJECTS
+     ------------------------------------------------------- */
+
+  #projects > div.space-y-16 article {
+    padding: 0.7rem;
+  }
+
+  #projects > div.mt-20 article {
+    padding: 0.75rem;
+  }
+
+  #projects > div.mt-20 > h3 {
+    font-size: 1.05rem;
+  }
+
+
+  /* -------------------------------------------------------
+     ACHIEVEMENTS
+     ------------------------------------------------------- */
+
+  #achievements > div.grid > div {
+    padding: 0.75rem;
+  }
+
+
+  /* -------------------------------------------------------
+     CONTACT
+     ------------------------------------------------------- */
+
+  #contact > div.max-w-4xl {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+
+  #contact > div.max-w-4xl > div {
+    padding: 0.9rem;
+  }
+
+  #contact > div.max-w-4xl > div > div.max-w-2xl h3 {
+    font-size: 1.05rem;
+  }
 }
